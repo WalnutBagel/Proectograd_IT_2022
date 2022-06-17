@@ -1,0 +1,94 @@
+﻿<Window x:Class="AIS_Games.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIS_Games"
+        mc:Ignorable="d"
+        Icon="Resources/IT-mini.jpg"
+        Title="ITGames" Height="800" Width="1500" 
+                           MinHeight="800" MinWidth="1500" 
+                           WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="#FF01AA2C"/>
+            <GradientStop Color="#FFC5FF00" Offset="0.433"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <!-- главное окно приложения, с которого осуществляются переходы на все страницы -->
+
+    <Grid >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="45*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="50 0" >
+            <Image Source="Resources/IT-mini.jpg"/>
+            <TextBlock Width="250"
+                       TextWrapping="Wrap"
+                       VerticalAlignment="Center"
+                       TextAlignment="Center"
+                       Style="{StaticResource TxBigStyle}"
+                       Text="IT-Бюро"/>
+        </StackPanel>
+
+        <ListBox Grid.Row="1"
+                 x:Name="GamesLV"
+                 BorderThickness="0"
+                 ItemsSource="{Binding games_info}" 
+                 Background="{x:Null}"
+                 SelectionChanged="GamesLV_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="0"
+                        MinWidth="260"
+                        MinHeight="500"
+                        MaxWidth="260"
+                        MaxHeight="500"
+                        Margin="5">
+
+                        <Grid Grid.Column="0" Margin="10">
+                            <StackPanel Orientation="Vertical">
+                                <Image x:Name="imgGame"
+                                    Stretch="Fill">
+                                    <Image.Source>
+                                        <Binding Path="GameImage">
+                                            <Binding.TargetNullValue>
+                                                <ImageSource>/AIS_Games;component/Resources/TestGame.jpg</ImageSource>
+                                            </Binding.TargetNullValue>
+                                        </Binding>
+                                    </Image.Source>
+                                </Image>
+                                <StackPanel>
+                                    <TextBlock TextWrapping="Wrap"
+                                           TextAlignment="Center"
+                                           Margin="10"
+                                           Style="{StaticResource TxSmallStyle}"
+                                           Text="Описание игры:"/>
+                                    <TextBlock TextWrapping="Wrap"
+                                           TextAlignment="Center"
+                                           Style="{StaticResource TxSmallStyle}"
+                                           Text="{Binding GameText}"/>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel VerticalAlignment="Bottom">
+                                <TextBlock TextWrapping="Wrap"
+                                           TextAlignment="Center"
+                                           Margin="10"
+                                           Style="{StaticResource TxSmallStyle}"
+                                           Text="Создатели игры:"/>
+                                <TextBlock TextWrapping="Wrap"
+                                           TextAlignment="Center"
+                                           Style="{StaticResource TxSmallStyle}"
+                                           Text="{Binding GameCreators}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
