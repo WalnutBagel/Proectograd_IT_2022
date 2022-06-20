@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AIS_Games.Windows"
         mc:Ignorable="d"
-        Title="Flappybird" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Flappybird" Height="490" Width="525">
+    <Canvas Name="MyCanvas" Focusable="True" KeyDown="KeyIsDown" KeyUp="KeyIsUp" Background="#FFB9C1F0">
+        <Image Height="145" Width="200" Source="/Resources/clouds.png" Canvas.Left="28" Canvas.Top="120" Tag="clouds"/>
+        <Image Height="145" Width="200" Source="/Resources/clouds2.png" Canvas.Left="307" Canvas.Top="120" Tag="clouds"/>
+
+
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Tag="obs1" Canvas.Left="76" Canvas.Top="270" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs1" Canvas.Left="76" Canvas.Top="-236" />
+
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Tag="obs2" Canvas.Left="228" Canvas.Top="416" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs2" Canvas.Left="228" Canvas.Top="-90" />
+
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Tag="obs3" Canvas.Left="426" Canvas.Top="292" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs3" Canvas.Left="426" Canvas.Top="-214" />
+
+        <Image Name="flappyBird" Height="36" Width="50" Source="/Resources/6c.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" />
+
+        <Label Name="txtScore" FontSize="22" FontWeight="ExtraBold" Content="Score: 0" />
+    </Canvas>
 </Window>

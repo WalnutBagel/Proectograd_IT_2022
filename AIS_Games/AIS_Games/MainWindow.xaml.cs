@@ -41,9 +41,9 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/TestGame.jpg",
-                GameText = "Игра про захват Татарстаном всея мира",
-                GameCreators = "Сделали Ваня и Леша))))"
+                GameImage = "Resources/pixil.png",
+                GameText = "Flappy Bird",
+                GameCreators = "Maria Konstantinova"
             });
             games_info.Add(new Game
             {
@@ -79,7 +79,7 @@ namespace AIS_Games
                     break;
 
                 case 1:
-                    Windows.LeshaVania win1 = new Windows.LeshaVania();
+                    Windows.Flappybird win1 = new Windows.Flappybird();
                     win1.ShowDialog();
                     break;
 
