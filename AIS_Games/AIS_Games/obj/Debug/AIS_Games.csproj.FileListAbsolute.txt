@@ -57,3 +57,5 @@ C:\Users\Student\Documents\GitHub\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\De
 C:\Users\Student\Documents\GitHub\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.csproj.CoreCompileInputs.cache
 C:\Users\Student\Documents\GitHub\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.exe
 C:\Users\Student\Documents\GitHub\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.pdb
+C:\Users\Student\Documents\GitHub\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\UPLAPPY.g.cs
+C:\Users\Student\Documents\GitHub\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\UPLAPPY.baml

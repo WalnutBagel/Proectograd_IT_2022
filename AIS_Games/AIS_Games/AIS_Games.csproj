@@ -58,6 +58,9 @@
     <Compile Include="Windows\LeshaVania.xaml.cs">
       <DependentUpon>LeshaVania.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\UPLAPPY.xaml.cs">
+      <DependentUpon>UPLAPPY.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -71,6 +74,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\LeshaVania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\UPLAPPY.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -109,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\TestGame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UPLAPPY\шашаки иконка.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

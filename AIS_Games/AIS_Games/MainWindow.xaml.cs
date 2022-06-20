@@ -47,9 +47,9 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/TestGame.jpg",
-                GameText = "Игра про захват Татарстаном всея мира",
-                GameCreators = "Сделали Ваня и Леша))))"
+                GameImage = "Resources/UPLAPPY/шашаки иконка.png",
+                GameText = "шашаки",
+                GameCreators = "Создатель: UPLAPPY"
             });
             games_info.Add(new Game
             {
@@ -84,7 +84,7 @@ namespace AIS_Games
                     break;
 
                 case 2:
-                    Windows.LeshaVania win2 = new Windows.LeshaVania();
+                    Windows.UPLAPPY win2 = new Windows.UPLAPPY();
                     win2.ShowDialog();
                     break;
 
