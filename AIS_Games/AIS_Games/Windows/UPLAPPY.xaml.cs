@@ -37,11 +37,6 @@ namespace AIS_Games.Windows
             
         }
 
-        internal class kletki
-        {
-            public char Kletka; //k крестик    n нолик    p пустота
-
-        }
 
         public void b1click(object sender, RoutedEventArgs e)
         { 
@@ -61,6 +56,77 @@ namespace AIS_Games.Windows
                 if (hod == "krestik")
                 { 
                     
+                }
+            }
+        }
+
+        public void b3click(object sender, RoutedEventArgs e)
+        {
+            if (bt3 == "p")
+            {
+                if (hod == "krestik")
+                {
+                    
+                }
+            }
+        }
+        public void b4click(object sender, RoutedEventArgs e)
+        {
+            if (bt4 == "p")
+            {
+                if (hod == "krestik")
+                {
+
+                }
+            }
+        }
+        public void b5click(object sender, RoutedEventArgs e)
+        {
+            if (bt5 == "p")
+            {
+                if (hod == "krestik")
+                {
+
+                }
+            }
+        }
+        public void b6click(object sender, RoutedEventArgs e)
+        {
+            if (bt6 == "p")
+            {
+                if (hod == "krestik")
+                {
+
+                }
+            }
+        }
+        public void b7click(object sender, RoutedEventArgs e)
+        {
+            if (bt7 == "p")
+            {
+                if (hod == "krestik")
+                {
+
+                }
+            }
+        }
+        public void b8click(object sender, RoutedEventArgs e)
+        {
+            if (bt8 == "p")
+            {
+                if (hod == "krestik")
+                {
+
+                }
+            }
+        }
+        public void b9click(object sender, RoutedEventArgs e)
+        {
+            if (bt9 == "p")
+            {
+                if (hod == "krestik")
+                {
+
                 }
             }
         }

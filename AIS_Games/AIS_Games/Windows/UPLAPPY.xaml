@@ -24,57 +24,57 @@
                 </DataTemplate>
             </Button.ContentTemplate>
         </Button>
-        <Button x:Name="b2" Click="b2click" Grid.Column="1" Grid.Row="0">
-            <Button.ContentTemplate>
-                <DataTemplate>
-                    <Image Source="/Resources/UPLAPPY/пусто.png"/>
-                </DataTemplate>
-            </Button.ContentTemplate>
-        </Button> 
-                
-        <Button x:Name="b3" Click="b3click" Grid.Column="2" Grid.Row="0">
+        <Button x:Name="b2" Click="b2click" Grid.Column="1" Grid.Row="0" Background="{x:Null}">
             <Button.ContentTemplate>
                 <DataTemplate>
                     <Image Source="/Resources/UPLAPPY/пусто.png"/>
                 </DataTemplate>
             </Button.ContentTemplate>
         </Button>
-        <Button x:Name="b4" Click="b4click" Grid.Column="0" Grid.Row="1">
+
+        <Button x:Name="b3" Click="b3click" Grid.Column="2" Grid.Row="0" Background="{x:Null}">
             <Button.ContentTemplate>
                 <DataTemplate>
                     <Image Source="/Resources/UPLAPPY/пусто.png"/>
                 </DataTemplate>
             </Button.ContentTemplate>
         </Button>
-        <Button x:Name="b5" Click="b5click" Grid.Column="1" Grid.Row="1">
+        <Button x:Name="b4" Click="b4click" Grid.Column="0" Grid.Row="1" Background="{x:Null}">
             <Button.ContentTemplate>
                 <DataTemplate>
                     <Image Source="/Resources/UPLAPPY/пусто.png"/>
                 </DataTemplate>
             </Button.ContentTemplate>
         </Button>
-        <Button x:Name="b6" Click="b6click" Grid.Column="2" Grid.Row="1">
+        <Button x:Name="b5" Click="b5click" Grid.Column="1" Grid.Row="1" Background="{x:Null}">
             <Button.ContentTemplate>
                 <DataTemplate>
                     <Image Source="/Resources/UPLAPPY/пусто.png"/>
                 </DataTemplate>
             </Button.ContentTemplate>
         </Button>
-        <Button x:Name="b7" Click="b7click" Grid.Column="0" Grid.Row="2">
+        <Button x:Name="b6" Click="b6click" Grid.Column="2" Grid.Row="1" Background="{x:Null}">
             <Button.ContentTemplate>
                 <DataTemplate>
                     <Image Source="/Resources/UPLAPPY/пусто.png"/>
                 </DataTemplate>
             </Button.ContentTemplate>
         </Button>
-        <Button x:Name="b8" Click="b8click" Grid.Column="1" Grid.Row="2">
+        <Button x:Name="b7" Click="b7click" Grid.Column="0" Grid.Row="2" Background="{x:Null}">
             <Button.ContentTemplate>
                 <DataTemplate>
                     <Image Source="/Resources/UPLAPPY/пусто.png"/>
                 </DataTemplate>
             </Button.ContentTemplate>
         </Button>
-        <Button x:Name="b9" Click="b9click" Grid.Column="2" Grid.Row="2">
+        <Button x:Name="b8" Click="b8click" Grid.Column="1" Grid.Row="2" Background="{x:Null}">
+            <Button.ContentTemplate>
+                <DataTemplate>
+                    <Image Source="/Resources/UPLAPPY/пусто.png"/>
+                </DataTemplate>
+            </Button.ContentTemplate>
+        </Button>
+        <Button x:Name="b9" Click="b9click" Grid.Column="2" Grid.Row="2" Background="{x:Null}">
             <Button.ContentTemplate>
                 <DataTemplate>
                     <Image Source="/Resources/UPLAPPY/пусто.png"/>
