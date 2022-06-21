@@ -120,5 +120,10 @@
   <ItemGroup>
     <Resource Include="Resources\UPLAPPY\шашаки иконка.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\UPLAPPY\b.png" />
+    <Resource Include="Resources\UPLAPPY\c.png" />
+    <Resource Include="Resources\UPLAPPY\n.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

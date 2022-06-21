@@ -11,58 +11,20 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
             <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="100"/>
-            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name = "btn1" Click="btn1" Grid.Column="0" Grid.Row="0"/>
-        <Button x:Name = "btn2" Click="btn2" Grid.Column="2" Grid.Row="0"/>
-        <Button x:Name = "btn3" Click="btn3" Grid.Column="4" Grid.Row="0"/>
-        <Button x:Name = "btn4" Click="btn4" Grid.Column="6" Grid.Row="0"/>
-        <Button x:Name = "btn5" Click="btn5" Grid.Column="1" Grid.Row="1"/>
-        <Button x:Name = "btn6" Click="btn6" Grid.Column="3" Grid.Row="1"/>
-        <Button x:Name = "btn7" Click="btn7" Grid.Column="5" Grid.Row="1"/>
-        <Button x:Name = "btn8" Click="btn8" Grid.Column="7" Grid.Row="1"/>
-        <Button x:Name = "btn9" Click="btn9" Grid.Column="0" Grid.Row="2"/>
-        <Button x:Name = "btn10" Click="btn10" Grid.Column="2" Grid.Row="2"/>
-        <Button x:Name = "btn11" Click="btn11" Grid.Column="4" Grid.Row="2"/>
-        <Button x:Name = "btn12" Click="btn12" Grid.Column="6" Grid.Row="2"/>
-        <Button x:Name = "btn13" Click="btn13" Grid.Column="1" Grid.Row="3"/>
-        <Button x:Name = "btn14" Click="btn14" Grid.Column="3" Grid.Row="3"/>
-        <Button x:Name = "btn15" Click="btn15" Grid.Column="5" Grid.Row="3"/>
-        <Button x:Name = "btn16" Click="btn16" Grid.Column="7" Grid.Row="3"/>
-        <Button x:Name = "btn17" Click="btn17" Grid.Column="0" Grid.Row="4"/>
-        <Button x:Name = "btn18" Click="btn18" Grid.Column="2" Grid.Row="4"/>
-        <Button x:Name = "btn19" Click="btn19" Grid.Column="4" Grid.Row="4"/>
-        <Button x:Name = "btn20" Click="btn20" Grid.Column="6" Grid.Row="4"/>
-        <Button x:Name = "btn21" Click="btn21" Grid.Column="1" Grid.Row="5"/>
-        <Button x:Name = "btn22" Click="btn22" Grid.Column="3" Grid.Row="5"/>
-        <Button x:Name = "btn23" Click="btn23" Grid.Column="5" Grid.Row="5"/>
-        <Button x:Name = "btn24" Click="btn24" Grid.Column="7" Grid.Row="5"/>
-        <Button x:Name = "btn25" Click="btn25" Grid.Column="0" Grid.Row="6"/>
-        <Button x:Name = "btn26" Click="btn26" Grid.Column="2" Grid.Row="6"/>
-        <Button x:Name = "btn27" Click="btn27" Grid.Column="4" Grid.Row="6"/>
-        <Button x:Name = "btn28" Click="btn28" Grid.Column="6" Grid.Row="6"/>
-        <Button x:Name = "btn29" Click="btn29" Grid.Column="1" Grid.Row="7"/>
-        <Button x:Name = "btn30" Click="btn30" Grid.Column="3" Grid.Row="7"/>
-        <Button x:Name = "btn31" Click="btn31" Grid.Column="5" Grid.Row="7"/>
-        <Button x:Name = "btn32" Click="btn32" Grid.Column="7" Grid.Row="7"/>
-   
-        
-    
-    
-    
+        <Button Grid.Column="0" Grid.Row="0"/>
+        <Button Grid.Column="1" Grid.Row="0"/>
+        <Button Grid.Column="2" Grid.Row="0"/>
+        <Button Grid.Column="0" Grid.Row="1"/>
+        <Button Grid.Column="1" Grid.Row="1"/>
+        <Button Grid.Column="2" Grid.Row="1"/>
+        <Button Grid.Column="0" Grid.Row="2"/>
+        <Button Grid.Column="1" Grid.Row="2"/>
+        <Button Grid.Column="2" Grid.Row="2"/>
     </Grid>
 </Window>
