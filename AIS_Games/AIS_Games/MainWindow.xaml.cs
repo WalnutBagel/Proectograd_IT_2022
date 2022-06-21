@@ -47,7 +47,7 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/UPLAPPY/шашаки иконка.png",
+                GameImage = "Resources/UPLAPPY/",
                 GameText = "шашаки",
                 GameCreators = "Создатель: UPLAPPY"
             });

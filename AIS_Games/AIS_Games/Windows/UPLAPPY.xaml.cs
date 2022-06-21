@@ -20,10 +20,50 @@ namespace AIS_Games.Windows
     public partial class UPLAPPY : Window
     {
 
+        string hod = "krestik";
+        string bt1 = "p";
+        string bt2 = "p";
+        string bt3 = "p";
+        string bt4 = "p";
+        string bt5 = "p";
+        string bt6 = "p";
+        string bt7 = "p";
+        string bt8 = "p";
+        string bt9 = "p";
+
         public UPLAPPY()
         {
             InitializeComponent();
+            
+        }
+
+        internal class kletki
+        {
+            public char Kletka; //k крестик    n нолик    p пустота
 
         }
+
+        public void b1click(object sender, RoutedEventArgs e)
+        { 
+            if (bt1 == "p")
+            {
+                if (hod == "krestik")
+                {
+                    
+                }
+            }
+        }
+
+        public void b2click(object sender, RoutedEventArgs e)
+        {
+            if (bt2 == "p")
+            {
+                if (hod == "krestik")
+                { 
+                    
+                }
+            }
+        }
     }
+
 }
