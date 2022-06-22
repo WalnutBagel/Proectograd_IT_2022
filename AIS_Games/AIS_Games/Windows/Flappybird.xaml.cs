@@ -25,7 +25,8 @@ namespace AIS_Games.Windows
 
 
         double score;
-        int gravity = 8;
+        int gravity = -1;
+        int speed = -10;
         bool gameOver;
         Rect flappyBirdHitBox;
 
@@ -35,17 +36,17 @@ namespace AIS_Games.Windows
 
             gameTimer.Tick += MainEventTimer;
             gameTimer.Interval = TimeSpan.FromMilliseconds(20);
-            StartGame();
         }
         private void MainEventTimer(object sender, EventArgs e)
         {
             txtScore.Content = "Score: " + score;
 
-            flappyBirdHitBox = new Rect(Canvas.GetLeft(flappyBird), Canvas.GetTop(flappyBird), flappyBird.Width - 12, flappyBird.Height);
+            flappyBirdHitBox = new Rect(Canvas.GetLeft(flappyBird), Canvas.GetTop(flappyBird), flappyBird.Width - 20, flappyBird.Height - 2);
 
-            Canvas.SetTop(flappyBird, Canvas.GetTop(flappyBird) + gravity);
+            Canvas.SetTop(flappyBird, Canvas.GetTop(flappyBird) + speed);
+            speed -= gravity;
 
-            if (Canvas.GetTop(flappyBird) < -30 || Canvas.GetTop(flappyBird) + flappyBird.Height > 460)
+            if (Canvas.GetTop(flappyBird) < -30 || Canvas.GetTop(flappyBird) + flappyBird.Height > 570)
             {
                 EndGame();
             }
@@ -53,15 +54,19 @@ namespace AIS_Games.Windows
 
             foreach (var x in MyCanvas.Children.OfType<Image>())
             {
-                if ((string)x.Tag == "obs1" || (string)x.Tag == "obs2" || (string)x.Tag == "obs3")
+                if ((string)x.Tag == "obs1" || (string)x.Tag == "obs2" || (string)x.Tag == "obs3" || (string)x.Tag == "obs4" || (string)x.Tag == "obs5")
                 {
                     Canvas.SetLeft(x, Canvas.GetLeft(x) - 5);
 
                     if (Canvas.GetLeft(x) < -100)
                     {
-                        Canvas.SetLeft(x, 800);
+                        Canvas.SetLeft(x, 1400);
+                        Random rnd = new Random();
+                        Canvas.SetTop(x, rnd.Next(0, 10));
+                        if ((string)x.Name == "obs1" || (string)x.Name == "obs2" || (string)x.Name == "obs3" || (string)x.Name == "obs4" || (string)x.Name == "obs5")
 
-                        score += .5;
+
+                            score += 0.5;
                     }
 
                     Rect PillarHitBox = new Rect(Canvas.GetLeft(x), Canvas.GetTop(x), x.Width, x.Height);
@@ -72,18 +77,16 @@ namespace AIS_Games.Windows
                     }
                 }
 
-                if ((string)x.Tag == "clouds")
-                {
-                    Canvas.SetLeft(x, Canvas.GetLeft(x) - 1);
+                //if ((string)x.Tag == "clouds")
+                //{
+                //    Canvas.SetLeft(x, Canvas.GetLeft(x) - 1);
 
-                    if (Canvas.GetLeft(x) < -250)
-                    {
-                        Canvas.SetLeft(x, 550);
+                //    if (Canvas.GetLeft(x) < -250)
+                //    {
+                //        Canvas.SetLeft(x, 550);
+                //    }
 
-                        score += .5;
-                    }
-
-                }
+                //}
 
 
             }
@@ -96,25 +99,27 @@ namespace AIS_Games.Windows
             if (e.Key == Key.Space)
             {
                 flappyBird.RenderTransform = new RotateTransform(-20, flappyBird.Width / 2, flappyBird.Height / 2);
-                gravity = -8;
+                speed = -10;
             }
 
-            if (e.Key == Key.R && gameOver == true)
-            {
-                StartGame();
-            }
+            //if (e.Key == Key.R && gameOver == true)
+            //{
+            //    StartGame();
+            //}
+
         }
 
         private void KeyIsUp(object sender, KeyEventArgs e)
         {
             flappyBird.RenderTransform = new RotateTransform(5, flappyBird.Width / 2, flappyBird.Height / 2);
-
-            gravity = 8;
+            
         }
 
         private void StartGame()
         {
             MyCanvas.Focus();
+
+            speed = -10;
 
             int temp = 300;
 
@@ -138,12 +143,20 @@ namespace AIS_Games.Windows
                 {
                     Canvas.SetLeft(x, 1100);
                 }
-
-                if ((string)x.Tag == "clouds")
+                if ((string)x.Tag == "obs4")
                 {
-                    Canvas.SetLeft(x, 300 + temp);
-                    temp = 800;
+                    Canvas.SetLeft(x, 1400);
                 }
+                if ((string)x.Tag == "obs5")
+                {
+                    Canvas.SetLeft(x, 1700);
+                }
+
+                //if ((string)x.Tag == "clouds")
+                //{
+                //    Canvas.SetLeft(x, 300 + temp);
+                //    temp = 800;
+                //}
             }
 
             gameTimer.Start();
@@ -151,10 +164,27 @@ namespace AIS_Games.Windows
 
         private void EndGame()
         {
+            speed = -10;
             gameTimer.Stop();
             gameOver = true;
             txtScore.Content += " Game Over!!! Press R to restart.";
+            Start.IsEnabled = true;
+            Start.Visibility = Visibility.Visible;
+            Exit.Visibility = Visibility.Visible;
 
+        }
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+            StartGame();
+            Start.IsEnabled = false;
+            Start.Visibility = Visibility.Hidden;
+            Exit.Visibility = Visibility.Hidden;
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
