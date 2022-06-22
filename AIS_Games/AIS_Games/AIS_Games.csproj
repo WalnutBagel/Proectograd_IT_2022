@@ -61,9 +61,6 @@
     <Compile Include="Windows\LeshaVania.xaml.cs">
       <DependentUpon>LeshaVania.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\start.xaml.cs">
-      <DependentUpon>start.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\UPLAPPY.xaml.cs">
       <DependentUpon>UPLAPPY.xaml</DependentUpon>
     </Compile>
@@ -84,10 +81,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\LeshaVania.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\start.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
