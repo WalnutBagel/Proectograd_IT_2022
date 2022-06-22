@@ -26,12 +26,13 @@
         <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="e" Tag="obs5" Canvas.Left="805" Canvas.Top="195" />
         <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs5" Canvas.Left="805" Canvas.Top="-311"/>
 
-        <Label Name="txtScore" FontSize="22" FontWeight="ExtraBold" Content="Score: 0" />
+        <Image Source="/Resources/score.png" Height="41" Width="128" Canvas.Left="-13" Canvas.Top="2"></Image>
+        <Label Name="txtScore" FontSize="30" FontWeight="ExtraBold" FontFamily="OCR A Extended" Content="0" RenderTransformOrigin="1.024,0.806" HorizontalAlignment="Left" Canvas.Left="101" VerticalAlignment="Top" Foreground="#FF080000" Width="27" Height="43" Canvas.Top="1" />
 
-        <Image x:Name="Startp" Source="/Resources/startb.png" Height="200" Width="400" MouseDown="Startp_MouseDown" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="300" Canvas.Top="100"/>
+        <Image x:Name="Startp" Source="/Resources/startb.png" Height="200" Width="300" MouseDown="Startp_MouseDown" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="350" Canvas.Top="180"/>
+        <Image x:Name="Exitp" Source="/Resources/exitb.png" Height="75" Width="170" MouseDown="Exitp_MouseDown" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="415" Canvas.Top="340"/>
+        <Image x:Name="Title" Source="/Resources/Flappybirdtt.png" Height="262" Width="510" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="245" Canvas.Top="55"/>
 
-
-        <Button Content="Exit" x:Name="Exit" Height="30" Canvas.Left="407" Canvas.Top="326" Width="169" Click="Exit_Click"/>
         <Image Name="flappyBird" Height="36" Width="50" Source="/Resources/bbird.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" />
 
     </Canvas>

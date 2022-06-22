@@ -39,7 +39,7 @@ namespace AIS_Games.Windows
         }
         private void MainEventTimer(object sender, EventArgs e)
         {
-            txtScore.Content = "Score: " + score;
+            txtScore.Content = score;
 
             flappyBirdHitBox = new Rect(Canvas.GetLeft(flappyBird), Canvas.GetTop(flappyBird), flappyBird.Width - 20, flappyBird.Height - 2);
 
@@ -112,7 +112,7 @@ namespace AIS_Games.Windows
                 StartGame();
                 Startp.IsEnabled = false;
                 Startp.Visibility = Visibility.Hidden;
-                Exit.Visibility = Visibility.Hidden;
+                Exitp.Visibility = Visibility.Hidden;
             }
 
         }
@@ -173,16 +173,10 @@ namespace AIS_Games.Windows
             speed = -10;
             gameTimer.Stop();
             gameOver = true;
-            txtScore.Content += " Game Over!!! Press R to restart.";
             Startp.IsEnabled = true;
             Startp.Visibility = Visibility.Visible;
-            Exit.Visibility = Visibility.Visible;
+            Exitp.Visibility = Visibility.Visible;
 
-        }
-
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
 
         private void Startp_MouseDown(object sender, MouseButtonEventArgs e)
@@ -190,7 +184,13 @@ namespace AIS_Games.Windows
             StartGame();
             Startp.IsEnabled = false;
             Startp.Visibility = Visibility.Hidden;
-            Exit.Visibility = Visibility.Hidden;
+            Exitp.Visibility = Visibility.Hidden;
+            Title.Visibility = Visibility.Hidden;
+        }
+
+        private void Exitp_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
         }
     }
 }

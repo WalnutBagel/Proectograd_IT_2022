@@ -118,25 +118,27 @@
     <Resource Include="Resources\TestGame.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\pixil.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\6c.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\pipeBottom.png" />
     <Resource Include="Resources\pipeTop.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\clouds.png" />
     <Resource Include="Resources\clouds2.png" />
-    <Resource Include="Resources\flappyBird.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\bbird.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\startb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\exitb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Flappybirdtt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
