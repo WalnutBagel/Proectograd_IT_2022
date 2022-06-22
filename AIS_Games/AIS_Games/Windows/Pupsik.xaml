@@ -8,19 +8,19 @@
         Title="Pupsik" Height="450" Width="800">
     <Grid Background="Transparent" MouseDown="Grid_MouseDown_Translate">
         <Border x:Name="border1" HorizontalAlignment="Left" VerticalAlignment="Top"
-             Width="80" Height="80" Background="Red" Margin="10,0,0,0" CornerRadius="10" 
+             Width="80" Height="80" Background="Red" Margin="10,10,0,0" CornerRadius="10" 
              BorderBrush="#FFB9B8B8" BorderThickness="3"/>
 
         <Border x:Name="border2" HorizontalAlignment="Left" VerticalAlignment="Top" 
-    Width="80" Height="80" Background="Yellow" Margin="100,0,0,0" CornerRadius="10" 
+    Width="80" Height="80" Background="Yellow" Margin="225,10,0,0" CornerRadius="10" 
     BorderBrush="#FFB9B8B8" BorderThickness="3"/>
 
         <Border x:Name="border3" HorizontalAlignment="Left" VerticalAlignment="Top" 
-    Width="80" Height="80" Background="DarkGreen" Margin="190,0,0,0" CornerRadius="10" 
+    Width="80" Height="80" Background="DarkGreen" Margin="505,10,0,0" CornerRadius="10" 
     BorderBrush="#FFB9B8B8" BorderThickness="3"/>
 
         <Border x:Name="border4" HorizontalAlignment="Left" VerticalAlignment="Top" 
-    Width="80" Height="80" Background="Blue" Margin="280,0,0,0" CornerRadius="10" 
+    Width="80" Height="80" Background="Blue" Margin="710,10,0,0" CornerRadius="10" 
     BorderBrush="#FFB9B8B8" BorderThickness="3" />
     </Grid>
 </Window>
