@@ -11,24 +11,27 @@
         <Image Height="145" Width="200" Source="/Resources/clouds2.png" Canvas.Left="307" Canvas.Top="120" Tag="clouds"/>
 
 
-        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Tag="obs1" Canvas.Left="76" Canvas.Top="270" />
-        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Name="a" Tag="obs1" Canvas.Left="76" Canvas.Top="-236" />
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="a" Tag="obs1" Canvas.Left="76" Canvas.Top="270" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs1" Canvas.Left="76" Canvas.Top="-236" />
 
-        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Tag="obs2" Canvas.Left="228" Canvas.Top="416" />
-        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Name="b" Tag="obs2" Canvas.Left="228" Canvas.Top="-90" />
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="b" Tag="obs2" Canvas.Left="228" Canvas.Top="416" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs2" Canvas.Left="228" Canvas.Top="-90" />
 
-        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Tag="obs3" Canvas.Left="426" Canvas.Top="292" />
-        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Name="c" Tag="obs3" Canvas.Left="426" Canvas.Top="-214" />
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="c" Tag="obs3" Canvas.Left="426" Canvas.Top="292" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs3" Canvas.Left="426" Canvas.Top="-214" />
 
-        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Tag="obs4" Canvas.Left="607" Canvas.Top="507" />
-        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Name="d" Tag="obs4" Canvas.Left="607" Canvas.Top="1"/>
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="d" Tag="obs4" Canvas.Left="607" Canvas.Top="489" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs4" Canvas.Left="607" Canvas.Top="-17" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
-        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Tag="obs5" Canvas.Left="802" Canvas.Top="225" />
-        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Name="e" Tag="obs5" Canvas.Left="802" Canvas.Top="-281"/>
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="e" Tag="obs5" Canvas.Left="805" Canvas.Top="195" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs5" Canvas.Left="805" Canvas.Top="-311"/>
 
         <Label Name="txtScore" FontSize="22" FontWeight="ExtraBold" Content="Score: 0" />
-        <Button Content="Start" x:Name="Start" Canvas.Left="305" Canvas.Top="150" Height="87" Width="233" Click="Start_Click"/>
-        <Button Content="Exit" x:Name="Exit" Height="30" Canvas.Left="341" Canvas.Top="284" Width="169" Click="Exit_Click"/>
+
+        <Image x:Name="Startp" Source="/Resources/startb.png" Height="200" Width="400" MouseDown="Startp_MouseDown" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="300" Canvas.Top="100"/>
+
+
+        <Button Content="Exit" x:Name="Exit" Height="30" Canvas.Left="407" Canvas.Top="326" Width="169" Click="Exit_Click"/>
         <Image Name="flappyBird" Height="36" Width="50" Source="/Resources/bbird.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" />
 
     </Canvas>

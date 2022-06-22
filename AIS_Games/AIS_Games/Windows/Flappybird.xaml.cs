@@ -62,8 +62,13 @@ namespace AIS_Games.Windows
                     {
                         Canvas.SetLeft(x, 1400);
                         Random rnd = new Random();
-                        Canvas.SetTop(x, rnd.Next(0, 10));
-                        if ((string)x.Name == "obs1" || (string)x.Name == "obs2" || (string)x.Name == "obs3" || (string)x.Name == "obs4" || (string)x.Name == "obs5")
+                        int rand = rnd.Next(-310, 0);
+                        Canvas.SetTop(x, rand);
+                        if ((string)x.Name == "a" || (string)x.Name == "b" || (string)x.Name == "c" || (string)x.Name == "d" || (string)x.Name == "e")
+                        {
+                            Canvas.SetTop(x, rand + 506);
+                            rand = 0;
+                        }
 
 
                             score += 0.5;
@@ -102,10 +107,13 @@ namespace AIS_Games.Windows
                 speed = -10;
             }
 
-            //if (e.Key == Key.R && gameOver == true)
-            //{
-            //    StartGame();
-            //}
+            if ((e.Key == Key.Space || e.Key == Key.Enter) && gameOver == true)
+            {
+                StartGame();
+                Startp.IsEnabled = false;
+                Startp.Visibility = Visibility.Hidden;
+                Exit.Visibility = Visibility.Hidden;
+            }
 
         }
 
@@ -120,8 +128,6 @@ namespace AIS_Games.Windows
             MyCanvas.Focus();
 
             speed = -10;
-
-            int temp = 300;
 
             score = 0;
 
@@ -168,23 +174,23 @@ namespace AIS_Games.Windows
             gameTimer.Stop();
             gameOver = true;
             txtScore.Content += " Game Over!!! Press R to restart.";
-            Start.IsEnabled = true;
-            Start.Visibility = Visibility.Visible;
+            Startp.IsEnabled = true;
+            Startp.Visibility = Visibility.Visible;
             Exit.Visibility = Visibility.Visible;
 
-        }
-
-        private void Start_Click(object sender, RoutedEventArgs e)
-        {
-            StartGame();
-            Start.IsEnabled = false;
-            Start.Visibility = Visibility.Hidden;
-            Exit.Visibility = Visibility.Hidden;
         }
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Startp_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            StartGame();
+            Startp.IsEnabled = false;
+            Startp.Visibility = Visibility.Hidden;
+            Exit.Visibility = Visibility.Hidden;
         }
     }
 }
