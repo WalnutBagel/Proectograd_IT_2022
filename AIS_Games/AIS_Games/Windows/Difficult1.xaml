@@ -1,0 +1,24 @@
+﻿<Window x:Class="AIS_Games.Windows.Difficult1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIS_Games.Windows"
+        mc:Ignorable="d"
+        Title="Difficult1" Height="450" Width="800">
+    <Grid Margin="0,349,601,0">
+        <Button x:Name="Easy" Click="Easy_Click_1" Content="Easy" Margin="0,-346,0,0"/>
+        <Image Source="/Resources/RickRoller.jpg" Margin="180,-362,-179,303" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="Hard" Click="Hard_Click" Content="Hard" Margin="601,-346,-601,0"/>
+        <Image Source="/Resources/Sus.jpg" Margin="425,-346,-435,319"/>
+    </Grid>
+</Window>

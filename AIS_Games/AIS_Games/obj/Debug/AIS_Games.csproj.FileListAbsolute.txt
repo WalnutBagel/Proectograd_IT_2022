@@ -57,3 +57,8 @@ C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\
 C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.csproj.CoreCompileInputs.cache
 C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.exe
 C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.pdb
+C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\Menu.g.cs
+C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\Difficult1.baml
+C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\Menu.baml
+C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\Pupsik.g.cs
+C:\Users\Student\Desktop\Ефим Тучка 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\Pupsik.baml

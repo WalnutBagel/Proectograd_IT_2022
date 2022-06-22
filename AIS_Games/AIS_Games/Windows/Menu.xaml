@@ -1,0 +1,18 @@
+﻿<Window x:Class="AIS_Games.Windows.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIS_Games.Windows"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="White" >
+    <Grid Margin="0,0,0,90">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/RickRoll.gif"/>
+        </Grid.Background>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="93" Margin="0,0,-386,-90">
+            <TextBlock Text="Friday RickRoll Funkin" Height="24" Width="374"/>
+        </StackPanel>
+        <Button x:Name="Start" Click="Start_Click"  Content="Start the Game" Margin="130,341,0,-90"/>
+    </Grid>
+</Window>

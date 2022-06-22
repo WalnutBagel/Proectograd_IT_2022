@@ -15,26 +15,23 @@ using System.Windows.Shapes;
 namespace AIS_Games.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для LeshaVania.xaml
+    /// Логика взаимодействия для Difficult.xaml
     /// </summary>
-    public partial class LeshaVania : Window
+    public partial class Difficulty : Window
     {
-        public LeshaVania()
+        public Difficulty()
         {
             InitializeComponent();
         }
 
-        private void Btn_Back_Click(object sender, RoutedEventArgs e)
+        private void Easy_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+
+        }
+
+        private void Hard_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
-
-    
 }
-
-
-
-
-
-

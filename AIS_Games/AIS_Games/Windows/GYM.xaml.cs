@@ -10,18 +10,28 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AIS_Games.Resources
+namespace AIS_Games.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class GYM: Window
     {
-        public Window1()
+        public GYM()
         {
             InitializeComponent();
         }
+
+
+        private void Start_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.Difficulty winDif = new Windows.Difficulty();
+            winDif.ShowDialog();
+        }
+
+
     }
 }

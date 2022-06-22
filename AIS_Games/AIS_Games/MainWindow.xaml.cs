@@ -53,9 +53,9 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/TestGame.jpg",
-                GameText = "Игра про захват Татарстаном всея мира",
-                GameCreators = "Сделали Ваня и Леша))))"
+                GameImage = "Resources/Nigger.jpg",
+                GameText = "Игра про Niggers",
+                GameCreators = "You know the rules"
             });
             games_info.Add(new Game
             {
@@ -89,7 +89,7 @@ namespace AIS_Games
                     break;
 
                 case 3:
-                    Windows.LeshaVania win3 = new Windows.LeshaVania();
+                    Windows.Menu win3 = new Windows.Menu();
                     win3.ShowDialog();
                     break;
 

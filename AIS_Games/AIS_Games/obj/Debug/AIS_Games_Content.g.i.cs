@@ -8,6 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/brykjclwiry.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/%d0%95%d1%84%d0%b8%d0%bc%20%d0%a2%d1%83%d1%87%d0%ba%d0%b0%202022/c-flap" +
+    "py-bird-game-windows-form/flappy%20bird%20windows%20form/flappy%20bird%20windows" +
+    "%20form/bin/debug/flappy%20bird%20windows%20form.exe")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/%d0%95%d1%84%d0%b8%d0%bc%20%d0%a2%d1%83%d1%87%d0%ba%d0%b0%202022/c-flap" +
+    "py-bird-game-windows-form/flappy%20bird%20windows%20form/flappy%20bird%20windows" +
+    "%20form/bin/debug/flappy%20bird%20windows%20form.pdb")]
 
 
