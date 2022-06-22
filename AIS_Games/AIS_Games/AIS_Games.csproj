@@ -124,7 +124,9 @@
   <ItemGroup>
     <Resource Include="Resources\TestGame.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\UPLAPPY\nolik.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\UPLAPPY\крестик.png" />
   </ItemGroup>

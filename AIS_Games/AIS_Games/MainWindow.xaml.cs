@@ -48,8 +48,8 @@ namespace AIS_Games
             games_info.Add(new Game
             {
                 GameImage = "Resources/UPLAPPY/",
-                GameText = "шашаки",
-                GameCreators = "Создатель: UPLAPPY"
+                GameText = "nOLIK-kRESTIK",
+                GameCreators = "Сделал: Андрюша))))"
             });
             games_info.Add(new Game
             {

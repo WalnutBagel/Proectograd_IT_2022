@@ -44,57 +44,98 @@ namespace AIS_Games.Windows
             if (bt1 == "k" && bt4 == "k" && bt7 == "k")
             {
                 string final = "krestik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
             }
             else if (bt1 == "n" && bt4 == "n" && bt7 == "n")
             {
                 string final = "nolik";
+                Windows.UPLAPPY win_n = new Windows.UPLAPPY();
+                win_n.ShowDialog();
             }
             else if (bt2 == "k" && bt5 == "k" && bt8 == "k")
             {
                 string final = "krestik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
             }
             else if (bt2 == "n" && bt5 == "n" && bt8 == "n")
             {
                 string final = "nolik";
+                Windows.UPLAPPY win_n = new Windows.UPLAPPY();
+                win_n.ShowDialog();
             }
             else if (bt3 == "k" && bt6 == "k" && bt9 == "k")
             {
                 string final = "krestik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
             }
             else if (bt3 == "n" && bt6 == "n" && bt9 == "n")
             {
                 string final = "nolik";
+                Windows.UPLAPPY win_n = new Windows.UPLAPPY();
+                win_n.ShowDialog();
             }
             else if (bt1 == "k" && bt2 == "k" && bt3 == "k")
             {
                 string final = "krestik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
             }
             else if (bt1 == "n" && bt2 == "n" && bt3 == "n")
             {
                 string final = "nolik";
+                Windows.UPLAPPY win_n = new Windows.UPLAPPY();
+                win_n.ShowDialog();
             }
             else if (bt4 == "k" && bt5 == "k" && bt6 == "k")
             {
                 string final = "krestik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
             }
             else if (bt4 == "n" && bt5 == "n" && bt6 == "n")
             {
                 string final = "nolik";
+                Windows.UPLAPPY win_n = new Windows.UPLAPPY();
+                win_n.ShowDialog();
             }
             else if (bt7 == "k" && bt8 == "k" && bt9 == "k")
             {
                 string final = "krestik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
             }
             else if (bt7 == "n" && bt8 == "n" && bt9 == "n")
             {
                 string final = "nolik";
+                Windows.UPLAPPY win_n = new Windows.UPLAPPY();
+                win_n.ShowDialog();
             }
-
-
-
-            if (final == "krestik")
-            { 
-                
+            else if (bt1 == "k" && bt5 == "k" && bt9 == "k")
+            {
+                string final = "krestik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
+            }
+            else if (bt1 == "n" && bt5 == "n" && bt9 == "n")
+            {
+                string final = "nolik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
+            }
+            else if (bt3 == "k" && bt5 == "k" && bt7 == "k")
+            {
+                string final = "krestik";
+                Windows.UPLAPPY win_k = new Windows.UPLAPPY();
+                win_k.ShowDialog();
+            }
+            else if (bt3 == "n" && bt5 == "n" && bt7 == "n")
+            {
+                string final = "nolik";
+                Windows.UPLAPPY win_n = new Windows.UPLAPPY();
+                win_n.ShowDialog();
             }
         }
 
@@ -104,12 +145,12 @@ namespace AIS_Games.Windows
             {
                 if (hod == "krestik")
                 {
-
+                    
                 }
 
                 else if (hod == "nolik") 
                 {
-                
+                    
                 }
             }
         }
