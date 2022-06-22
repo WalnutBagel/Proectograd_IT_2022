@@ -14,14 +14,59 @@ using System.Windows.Shapes;
 
 namespace AIS_Games.Windows
 {
-    /// <summary>
-    /// Логика взаимодействия для Window1.xaml
-    /// </summary>
-    public partial class Window1 : Window
+    public partial class Grisha : Window
     {
-        public Window1()
+        Random rnd = new Random();
+        string Player = "";
+        string compucter = "";
+        string modeGame = "show";
+        int scoreWin;
+        int scoreLose;
+        int scoreDraw;
+
+
+
+
+        public Grisha()
         {
             InitializeComponent();
+
         }
-    }
+
+        private void Rock_Click(object sender, RoutedEventArgs e)
+        {
+            //BitmapImage image = new BitmapImage();
+            //image.BeginInit();
+            //image.UriSource = new Uri("/Resources/Grisha/TheRock.jpg");
+            //image.EndInit();
+            //img_Player.Source = image;
+        }
+
+        private void Paper_Click(object sender, RoutedEventArgs e)
+        {
+            //BitmapImage image = new BitmapImage();
+            //image.BeginInit();
+            //image.UriSource = new Uri(@"/Resources/Grisha/");
+            //image.EndInit();
+            //img_Player.Source = image;
+        }
+
+        private void Scissors_Click(object sender, RoutedEventArgs e)
+        {
+            //BitmapImage image = new BitmapImage();
+            //image.BeginInit();
+            //image.UriSource = new Uri(@"/Resources/Grisha/");
+            //image.EndInit();
+            //img_Player.Source = image; 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+
+
+
+    }    
 }

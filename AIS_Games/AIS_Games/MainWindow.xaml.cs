@@ -59,9 +59,9 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/TestGame.jpg",
-                GameText = "Игра про захват Татарстаном всея мира",
-                GameCreators = "Сделали Ваня и Леша))))"
+                GameImage = "Resources/Grisha/images.jpg",
+                GameText = "Камень,ножницы,бумага",
+                GameCreators = "Сделал Гриша"
             });
             GamesLV.ItemsSource = games_info;
 
@@ -94,7 +94,7 @@ namespace AIS_Games
                     break;
 
                 case 4:
-                    Windows.LeshaVania win4 = new Windows.LeshaVania();
+                    Windows.Grisha win4 = new Windows.Grisha();
                     win4.ShowDialog();
                     break;
                     
