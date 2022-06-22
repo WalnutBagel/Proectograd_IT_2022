@@ -55,8 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Windows\final.xaml.cs">
+      <DependentUpon>final.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\LeshaVania.xaml.cs">
       <DependentUpon>LeshaVania.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\start.xaml.cs">
+      <DependentUpon>start.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\UPLAPPY.xaml.cs">
       <DependentUpon>UPLAPPY.xaml</DependentUpon>
@@ -73,7 +79,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\final.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\LeshaVania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\start.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

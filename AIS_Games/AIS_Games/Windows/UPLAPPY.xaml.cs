@@ -20,16 +20,18 @@ namespace AIS_Games.Windows
     public partial class UPLAPPY : Window
     {
 
-        string hod = "krestik";
-        string bt1 = "p";
-        string bt2 = "p";
-        string bt3 = "p";
-        string bt4 = "p";
-        string bt5 = "p";
-        string bt6 = "p";
-        string bt7 = "p";
-        string bt8 = "p";
-        string bt9 = "p";
+        public string hod = "krestik";
+        public string final = " ";
+        public string bt1 = "p";
+        public string bt2 = "p";
+        public string bt3 = "p";
+        public string bt4 = "p";
+        public string bt5 = "p";
+        public string bt6 = "p";
+        public string bt7 = "p";
+        public string bt8 = "p";
+        public string bt9 = "p";
+
 
         public UPLAPPY()
         {
@@ -37,6 +39,64 @@ namespace AIS_Games.Windows
             
         }
 
+        public void proverka()
+        {
+            if (bt1 == "k" && bt4 == "k" && bt7 == "k")
+            {
+                string final = "krestik";
+            }
+            else if (bt1 == "n" && bt4 == "n" && bt7 == "n")
+            {
+                string final = "nolik";
+            }
+            else if (bt2 == "k" && bt5 == "k" && bt8 == "k")
+            {
+                string final = "krestik";
+            }
+            else if (bt2 == "n" && bt5 == "n" && bt8 == "n")
+            {
+                string final = "nolik";
+            }
+            else if (bt3 == "k" && bt6 == "k" && bt9 == "k")
+            {
+                string final = "krestik";
+            }
+            else if (bt3 == "n" && bt6 == "n" && bt9 == "n")
+            {
+                string final = "nolik";
+            }
+            else if (bt1 == "k" && bt2 == "k" && bt3 == "k")
+            {
+                string final = "krestik";
+            }
+            else if (bt1 == "n" && bt2 == "n" && bt3 == "n")
+            {
+                string final = "nolik";
+            }
+            else if (bt4 == "k" && bt5 == "k" && bt6 == "k")
+            {
+                string final = "krestik";
+            }
+            else if (bt4 == "n" && bt5 == "n" && bt6 == "n")
+            {
+                string final = "nolik";
+            }
+            else if (bt7 == "k" && bt8 == "k" && bt9 == "k")
+            {
+                string final = "krestik";
+            }
+            else if (bt7 == "n" && bt8 == "n" && bt9 == "n")
+            {
+                string final = "nolik";
+            }
+
+
+
+            if (final == "krestik")
+            { 
+                
+            }
+        }
 
         public void b1click(object sender, RoutedEventArgs e)
         { 
@@ -44,7 +104,12 @@ namespace AIS_Games.Windows
             {
                 if (hod == "krestik")
                 {
-                    
+
+                }
+
+                else if (hod == "nolik") 
+                {
+                
                 }
             }
         }
@@ -54,8 +119,12 @@ namespace AIS_Games.Windows
             if (bt2 == "p")
             {
                 if (hod == "krestik")
-                { 
-                    
+                {
+
+                }
+                else if (hod == "nolik")
+                {
+
                 }
             }
         }
@@ -66,7 +135,11 @@ namespace AIS_Games.Windows
             {
                 if (hod == "krestik")
                 {
-                    
+
+                }
+                else if (hod == "nolik")
+                {
+
                 }
             }
         }
@@ -75,6 +148,10 @@ namespace AIS_Games.Windows
             if (bt4 == "p")
             {
                 if (hod == "krestik")
+                {
+
+                }
+                else if (hod == "nolik")
                 {
 
                 }
@@ -88,6 +165,10 @@ namespace AIS_Games.Windows
                 {
 
                 }
+                else if (hod == "nolik")
+                {
+
+                }
             }
         }
         public void b6click(object sender, RoutedEventArgs e)
@@ -95,6 +176,10 @@ namespace AIS_Games.Windows
             if (bt6 == "p")
             {
                 if (hod == "krestik")
+                {
+
+                }
+                else if (hod == "nolik")
                 {
 
                 }
@@ -108,6 +193,10 @@ namespace AIS_Games.Windows
                 {
 
                 }
+                else if (hod == "nolik")
+                {
+
+                }
             }
         }
         public void b8click(object sender, RoutedEventArgs e)
@@ -115,6 +204,10 @@ namespace AIS_Games.Windows
             if (bt8 == "p")
             {
                 if (hod == "krestik")
+                {
+
+                }
+                else if (hod == "nolik")
                 {
 
                 }
@@ -128,8 +221,13 @@ namespace AIS_Games.Windows
                 {
 
                 }
+                else if (hod == "nolik")
+                {
+
+                }
             }
         }
     }
+
 
 }
