@@ -36,7 +36,7 @@ namespace AIS_Games.Windows
         public UPLAPPY()
         {
             InitializeComponent();
-            
+
         }
 
         public void proverka()
@@ -140,153 +140,153 @@ namespace AIS_Games.Windows
         }
 
         public void b1click(object sender, RoutedEventArgs e)
-        { 
+        {
             if (bt1 == "p")
             {
                 if (hod == "krestik")
                 {
                     bt1 = "k";
                     hod = "nolik";
-                }
+                    //Content.ImageSource = new BitmapImage(new Uri("/Resources/UPLAPPY/крестик.png", UriKind.RelativeOrAbsolute));
 
-                else if (hod == "nolik") 
+                else if (hod == "nolik")
+                    {
+                        bt1 = "n";
+                        hod = "krestik";
+                    }
+                }
+            }
+
+            public void b2click(object sender, RoutedEventArgs e)
+            {
+                if (bt2 == "p")
                 {
-                    bt1 = "n";
-                    hod = "krestik";
+                    if (hod == "krestik")
+                    {
+                        bt2 = "k";
+                        hod = "nolik";
+                    }
+                    else if (hod == "nolik")
+                    {
+                        bt2 = "n";
+                        hod = "krestik";
+                    }
+                }
+            }
+
+            public void b3click(object sender, RoutedEventArgs e)
+            {
+                if (bt3 == "p")
+                {
+                    if (hod == "krestik")
+                    {
+                        bt3 = "k";
+                        hod = "nolik";
+                    }
+                    else if (hod == "nolik")
+                    {
+                        bt3 = "n";
+                        hod = "krestik";
+                    }
+                }
+            }
+            public void b4click(object sender, RoutedEventArgs e)
+            {
+                if (bt4 == "p")
+                {
+                    if (hod == "krestik")
+                    {
+                        bt4 = "k";
+                        hod = "nolik";
+                    }
+                    else if (hod == "nolik")
+                    {
+                        bt4 = "n";
+                        hod = "krestik";
+                    }
+                }
+            }
+            public void b5click(object sender, RoutedEventArgs e)
+            {
+                if (bt5 == "p")
+                {
+                    if (hod == "krestik")
+                    {
+                        bt5 = "k";
+                        hod = "nolik";
+                    }
+                    else if (hod == "nolik")
+                    {
+                        bt5 = "n";
+                        hod = "krestik";
+                    }
+                }
+            }
+            public void b6click(object sender, RoutedEventArgs e)
+            {
+                if (bt6 == "p")
+                {
+                    if (hod == "krestik")
+                    {
+                        bt6 = "k";
+                        hod = "nolik";
+                    }
+                    else if (hod == "nolik")
+                    {
+                        bt6 = "n";
+                        hod = "krestik";
+                    }
+                }
+            }
+            public void b7click(object sender, RoutedEventArgs e)
+            {
+                if (bt7 == "p")
+                {
+                    if (hod == "krestik")
+                    {
+                        bt7 = "k";
+                        hod = "nolik";
+                    }
+                    else if (hod == "nolik")
+                    {
+                        bt7 = "n";
+                        hod = "krestik";
+                    }
+                }
+            }
+            public void b8click(object sender, RoutedEventArgs e)
+            {
+                if (bt8 == "p")
+                {
+                    if (hod == "krestik")
+                    {
+                        bt8 = "k";
+                        hod = "nolik";
+                    }
+                    else if (hod == "nolik")
+                    {
+                        bt8 = "n";
+                        hod = "krestik";
+                    }
+                }
+            }
+            public void b9click(object sender, RoutedEventArgs e)
+            {
+                if (bt9 == "p")
+                {
+                    if (hod == "krestik")
+                    {
+                        bt9 = "k";
+                        hod = "nolik";
+                    }
+                    else if (hod == "nolik")
+                    {
+                        bt9 = "n";
+                        hod = "krestik";
+                    }
                 }
             }
         }
 
-        public void b2click(object sender, RoutedEventArgs e)
-        {
-            if (bt2 == "p")
-            {
-                if (hod == "krestik")
-                {
-                    bt2 = "k";
-                    hod = "nolik";
-                }
-                else if (hod == "nolik")
-                {
-                    bt2 = "n";
-                    hod = "krestik";
-                }
-            }
-        }
 
-        public void b3click(object sender, RoutedEventArgs e)
-        {
-            if (bt3 == "p")
-            {
-                if (hod == "krestik")
-                {
-                    bt3 = "k";
-                    hod = "nolik";
-                }
-                else if (hod == "nolik")
-                {
-                    bt3 = "n";
-                    hod = "krestik";
-                }
-            }
-        }
-        public void b4click(object sender, RoutedEventArgs e)
-        {
-            if (bt4 == "p")
-            {
-                if (hod == "krestik")
-                {
-                    bt4 = "k";
-                    hod = "nolik";
-                }
-                else if (hod == "nolik")
-                {
-                    bt4 = "n";
-                    hod = "krestik";
-                }
-            }
-        }
-        public void b5click(object sender, RoutedEventArgs e)
-        {
-            if (bt5 == "p")
-            {
-                if (hod == "krestik")
-                {
-                    bt5 = "k";
-                    hod = "nolik";
-                }
-                else if (hod == "nolik")
-                {
-                    bt5 = "n";
-                    hod = "krestik";
-                }
-            }
-        }
-        public void b6click(object sender, RoutedEventArgs e)
-        {
-            if (bt6 == "p")
-            {
-                if (hod == "krestik")
-                {
-                    bt6 = "k";
-                    hod = "nolik";
-                }
-                else if (hod == "nolik")
-                {
-                    bt6 = "n";
-                    hod = "krestik";
-                }
-            }
-        }
-        public void b7click(object sender, RoutedEventArgs e)
-        {
-            if (bt7 == "p")
-            {
-                if (hod == "krestik")
-                {
-                    bt7 = "k";
-                    hod = "nolik";
-                }
-                else if (hod == "nolik")
-                {
-                    bt7 = "n";
-                    hod = "krestik";
-                }
-            }
-        }
-        public void b8click(object sender, RoutedEventArgs e)
-        {
-            if (bt8 == "p")
-            {
-                if (hod == "krestik")
-                {
-                    bt8 = "k";
-                    hod = "nolik";
-                }
-                else if (hod == "nolik")
-                {
-                    bt8 = "n";
-                    hod = "krestik";
-                }
-            }
-        }
-        public void b9click(object sender, RoutedEventArgs e)
-        {
-            if (bt9 == "p")
-            {
-                if (hod == "krestik")
-                {
-                    bt9 = "k";
-                    hod = "nolik";
-                }
-                else if (hod == "nolik")
-                {
-                    bt9 = "n";
-                    hod = "krestik";
-                }
-            }
-        }
     }
-
-
-}

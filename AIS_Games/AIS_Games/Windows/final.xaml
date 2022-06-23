@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="final" Height="450" Width="800">
     <Grid>
-        
+        <Button Height="200" x:Name="Заново" Content="Заново">
+
+        </Button>
     </Grid>
 </Window>
