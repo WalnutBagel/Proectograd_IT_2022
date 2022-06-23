@@ -61,6 +61,9 @@
     <Compile Include="Windows\LeshaVania.xaml.cs">
       <DependentUpon>LeshaVania.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\SkinChange.xaml.cs">
+      <DependentUpon>SkinChange.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -78,6 +81,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\LeshaVania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SkinChange.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,6 +146,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Flappybirdtt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\IconFlappy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\skinchb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FlappyBird2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\tick.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

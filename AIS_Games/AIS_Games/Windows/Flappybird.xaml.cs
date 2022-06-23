@@ -107,12 +107,13 @@ namespace AIS_Games.Windows
                 speed = -10;
             }
 
-            if ((e.Key == Key.Space || e.Key == Key.Enter) && gameOver == true)
+            if (e.Key == Key.Enter && gameOver == true)
             {
                 StartGame();
                 Startp.IsEnabled = false;
                 Startp.Visibility = Visibility.Hidden;
                 Exitp.Visibility = Visibility.Hidden;
+                EendScore.Visibility = Visibility.Hidden;
             }
 
         }
@@ -176,6 +177,8 @@ namespace AIS_Games.Windows
             Startp.IsEnabled = true;
             Startp.Visibility = Visibility.Visible;
             Exitp.Visibility = Visibility.Visible;
+            EendScore.Text = "Your score:" + score;
+            EendScore.Visibility = Visibility.Visible;
 
         }
 
@@ -186,11 +189,18 @@ namespace AIS_Games.Windows
             Startp.Visibility = Visibility.Hidden;
             Exitp.Visibility = Visibility.Hidden;
             Title.Visibility = Visibility.Hidden;
+            EendScore.Visibility = Visibility.Hidden;
         }
 
         private void Exitp_MouseDown(object sender, MouseButtonEventArgs e)
         {
             this.Close();
+        }
+
+        private void Skin_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Windows.SkinChange win1 = new Windows.SkinChange();
+            win1.ShowDialog();
         }
     }
 }

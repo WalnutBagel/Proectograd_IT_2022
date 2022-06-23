@@ -59,3 +59,5 @@ C:\Users\Student\Desktop\Константинова проект c# 2022\Proecto
 C:\Users\Student\Desktop\Константинова проект c# 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.csproj.CoreCompileInputs.cache
 C:\Users\Student\Desktop\Константинова проект c# 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.exe
 C:\Users\Student\Desktop\Константинова проект c# 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\AIS_Games.pdb
+C:\Users\Student\Desktop\Константинова проект c# 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\SkinChange.g.cs
+C:\Users\Student\Desktop\Константинова проект c# 2022\Proectograd_IT_2022\AIS_Games\AIS_Games\obj\Debug\Windows\SkinChange.baml

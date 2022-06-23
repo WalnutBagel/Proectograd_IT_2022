@@ -41,7 +41,7 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/pixil.png",
+                GameImage = "Resources/IconFlappy.png",
                 GameText = "Flappy Bird",
                 GameCreators = "Maria Konstantinova"
             });
