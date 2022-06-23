@@ -22,6 +22,8 @@ namespace AIS_Games.Windows
         public final()
         {
             InitializeComponent();
+
         }
+
     }
 }
