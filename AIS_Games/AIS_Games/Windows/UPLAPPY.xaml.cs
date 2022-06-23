@@ -182,6 +182,7 @@ namespace AIS_Games.Windows
                 {
                     bt2 = "k";
                     hod = "nolik";
+
                     proverka();
                 }
                 else if (hod == "nolik")

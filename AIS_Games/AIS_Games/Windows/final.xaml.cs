@@ -25,7 +25,7 @@ namespace AIS_Games.Windows
 
         }
 
-        public void zanovo()
+        public void zanovo(object sender, RoutedEventArgs e)
         {
             Close();
         }
