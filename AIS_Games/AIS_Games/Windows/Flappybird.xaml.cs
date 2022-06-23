@@ -199,8 +199,15 @@ namespace AIS_Games.Windows
 
         private void Skin_MouseDown(object sender, MouseButtonEventArgs e)
         {
+
             Windows.SkinChange win1 = new Windows.SkinChange();
+            //win1.Owner = this;
             win1.ShowDialog();
+        }
+
+       public void SkinCha(ImageSource a)
+        {
+            flappyBird.Source = a;
         }
     }
 }

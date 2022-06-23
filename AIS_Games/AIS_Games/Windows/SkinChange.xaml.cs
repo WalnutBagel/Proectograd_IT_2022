@@ -22,6 +22,7 @@ namespace AIS_Games.Windows
         public SkinChange()
         {
             InitializeComponent();
+
         }
 
         private void flappyBird1_MouseDown(object sender, MouseButtonEventArgs e)
@@ -35,6 +36,7 @@ namespace AIS_Games.Windows
             Tick2.Visibility = Visibility.Visible;
             Tick1.Visibility = Visibility.Hidden;
             //Flappybird = "/Resources/bbird.png";
+            //SkinCha();
         }
     }
 }
