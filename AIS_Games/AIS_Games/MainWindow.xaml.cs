@@ -47,9 +47,9 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/UPLAPPY/",
+                GameImage = "Resources/UPLAPPY/icon.png",
                 GameText = "nOLIK-kRESTIK",
-                GameCreators = "Сделал: Андрюша))))"
+                GameCreators = "Пытался сделать Андрюша))))"
             });
             games_info.Add(new Game
             {
@@ -103,7 +103,7 @@ namespace AIS_Games
             }
 
             this.Opacity = 1;
-            GamesLV.SelectedIndex = -1;
+            GamesLV.SelectedIndex =  -1;
         }
     }
 }
