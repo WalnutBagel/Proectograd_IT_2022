@@ -20,7 +20,7 @@
         <Button x:Name="b1" Click="b1click" Grid.Column="0" Grid.Row="0">
             <Button.ContentTemplate>
                 <DataTemplate>
-                    <Image x:Name="but1" Source="/Resources/UPLAPPY/пусто.png"/>
+                    <Image x:Name="but" Source="/Resources/UPLAPPY/пусто.png"/>
                 </DataTemplate>
             </Button.ContentTemplate>
         </Button>
