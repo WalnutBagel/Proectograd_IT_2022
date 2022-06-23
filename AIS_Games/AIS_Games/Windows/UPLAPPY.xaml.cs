@@ -147,7 +147,7 @@ namespace AIS_Games.Windows
                 {
                     bt1 = "k";
                     hod = "nolik";
-                    //Content.ImageSource = new BitmapImage(new Uri("/Resources/UPLAPPY/крестик.png", UriKind.RelativeOrAbsolute));
+                    but1.ImageSource = new BitmapImage(new Uri("/Resources/UPLAPPY/крестик.png", UriKind.RelativeOrAbsolute));
                 }
                 else if (hod == "nolik")
                 {
