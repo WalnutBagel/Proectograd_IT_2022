@@ -38,7 +38,7 @@ namespace AIS_Games.Windows
         {
             BitmapImage image = new BitmapImage();
             image.BeginInit();
-            image.UriSource = new Uri("C:/Users/Student/Desktop/Рябов/Proectograd_IT_2022/AIS_Games/AIS_Games/Resources/Grisha/TheRock2.0.jpg");
+            image.UriSource = new Uri("C:/Users/Student/Desktop/Рябов/Proectograd_IT_2022/AIS_Games/AIS_Games/Resources/Grisha/TheRock.jpg");
             image.EndInit();
             img_Player.Source = image;
             EnemyTurn();
@@ -46,12 +46,7 @@ namespace AIS_Games.Windows
 
         private void Paper_Click(object sender, RoutedEventArgs e)
         {
-            //BitmapImage image = new BitmapImage();
-            //image.BeginInit();
-            //image.UriSource = new Uri();
-            //image.EndInit();
-            ////img_Player.Source = image;
-            //img_PC.Source = new BitmapImage(new Uri(@"./Resources/Grisha/TheRock.jpg"));
+           
             BitmapImage image = new BitmapImage();
             image.BeginInit();
             image.UriSource = new Uri("C:/Users/Student/Desktop/Рябов/Proectograd_IT_2022/AIS_Games/AIS_Games/Resources/Grisha/Paper.jpg");
@@ -86,6 +81,6 @@ namespace AIS_Games.Windows
             img_PC.Source = image;
         }
 
-
-    }    
+             
+    }   
 }

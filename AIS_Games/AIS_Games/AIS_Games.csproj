@@ -140,13 +140,10 @@
     <Resource Include="Resources\Grisha\chainsaw.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Grisha\TheRock2.0.jpg" />
+    <Resource Include="Resources\Grisha\TheRock.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Grisha\Paper.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Grisha\TheRock.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
