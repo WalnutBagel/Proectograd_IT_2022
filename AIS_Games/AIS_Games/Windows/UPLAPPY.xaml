@@ -18,9 +18,9 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Button x:Name="b1" Click="b1click" Grid.Column="0" Grid.Row="0">
-            <Button.Background>
+            <!--<Button.Background>
                 <ImageBrush ImageSource="/Resources/UPLAPPY/пусто.png" Stretch="UniformToFill" />
-            </Button.Background>
+            </Button.Background>-->
         </Button>
         <Button x:Name="b2" Click="b2click" Grid.Column="1" Grid.Row="0" Background="{x:Null}">
             <Button.ContentTemplate>
