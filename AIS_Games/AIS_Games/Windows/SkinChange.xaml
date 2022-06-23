@@ -10,9 +10,10 @@
         <TextBlock FontSize="60" TextWrapping="Wrap" FontFamily="OCR A Extended" HorizontalAlignment="Left" VerticalAlignment="Top" Width="650" Canvas.Left="175" Canvas.Top="35" Height="174" Background="Transparent" TextAlignment="Center" Margin="73,4,0,0" Foreground="#FF610C0C" >
             Change Your Skin
         </TextBlock>
-        <Image x:Name="flappyBird1" Source="/Resources/bbird.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" Margin="48,138,606,198" />
-        <Image x:Name="flappyBird2" Source="/Resources/FlappyBird2.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" Margin="194,138,446,198" />
+        <Image x:Name="flappyBird1" Source="/Resources/bbird.png" MouseDown="flappyBird1_MouseDown" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" Margin="48,138,606,198" />
+        <Image x:Name="flappyBird2" Source="/Resources/FlappyBird2.png" MouseDown="flappyBird2_MouseDown" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" Margin="194,138,446,198" />
+        
         <Image x:Name="Tick1" Source="/Resources/tick.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" Margin="74,166,644,216" />
-        <Image x:Name="Tick2" Source="/Resources/tick.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" Margin="251,166,460,216" />
+        <Image x:Name="Tick2" Source="/Resources/tick.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" Margin="251,166,460,216" Visibility="Hidden"/>
     </Grid>
 </Window>

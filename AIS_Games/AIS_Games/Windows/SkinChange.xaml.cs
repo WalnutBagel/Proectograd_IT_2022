@@ -23,5 +23,18 @@ namespace AIS_Games.Windows
         {
             InitializeComponent();
         }
+
+        private void flappyBird1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Tick1.Visibility = Visibility.Visible;
+            Tick2.Visibility = Visibility.Hidden;
+        }
+
+        private void flappyBird2_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Tick2.Visibility = Visibility.Visible;
+            Tick1.Visibility = Visibility.Hidden;
+            //Flappybird = "/Resources/bbird.png";
+        }
     }
 }
