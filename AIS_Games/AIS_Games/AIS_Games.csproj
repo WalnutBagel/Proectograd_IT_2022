@@ -128,9 +128,6 @@
     <Resource Include="Resources\TestGame.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Grisha\TheRock.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Grisha\Salavat.png" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +135,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Grisha\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Grisha\chainsaw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Grisha\TheRock2.0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Grisha\Paper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Grisha\TheRock.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

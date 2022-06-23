@@ -28,7 +28,7 @@
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="Rock" Content="Rock" Click="Rock_Click" Width="150" Height="50" FontSize="30" Margin="50 0"/>
-            <Button x:Name="Paper" Content="Paper" Click="Paper_Click" Width="150" Height="50" FontSize="30" Margin="50 0"/>
+            <Button x:Name="Paper" Content="Paper" Click="Paper_Click" Width="150" Height="50" FontSize="30"/>
             <Button x:Name="Scissors" Content="Scissors" Click="Scissors_Click" Width="150" Height="50" FontSize="30" Margin="50 0"/>
             
         </StackPanel>

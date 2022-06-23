@@ -16,13 +16,14 @@ namespace AIS_Games.Windows
 {
     public partial class Grisha : Window
     {
-        Random rnd = new Random();
+      
         string Player = "";
         string compucter = "";
         string modeGame = "show";
         int scoreWin;
         int scoreLose;
         int scoreDraw;
+        List<string> list = (new string[] { "TheRock", "Paper", "chainsaw" }).ToList(); //список
 
 
 
@@ -35,29 +36,38 @@ namespace AIS_Games.Windows
 
         private void Rock_Click(object sender, RoutedEventArgs e)
         {
-            //BitmapImage image = new BitmapImage();
-            //image.BeginInit();
-            //image.UriSource = new Uri("/Resources/Grisha/TheRock.jpg");
-            //image.EndInit();
-            //img_Player.Source = image;
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.UriSource = new Uri("C:/Users/Student/Desktop/Рябов/Proectograd_IT_2022/AIS_Games/AIS_Games/Resources/Grisha/TheRock2.0.jpg");
+            image.EndInit();
+            img_Player.Source = image;
+            EnemyTurn();
         }
 
         private void Paper_Click(object sender, RoutedEventArgs e)
         {
             //BitmapImage image = new BitmapImage();
             //image.BeginInit();
-            //image.UriSource = new Uri(@"/Resources/Grisha/");
+            //image.UriSource = new Uri();
             //image.EndInit();
-            //img_Player.Source = image;
+            ////img_Player.Source = image;
+            //img_PC.Source = new BitmapImage(new Uri(@"./Resources/Grisha/TheRock.jpg"));
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.UriSource = new Uri("C:/Users/Student/Desktop/Рябов/Proectograd_IT_2022/AIS_Games/AIS_Games/Resources/Grisha/Paper.jpg");
+            image.EndInit();
+            img_Player.Source = image;
+            EnemyTurn();
         }
 
         private void Scissors_Click(object sender, RoutedEventArgs e)
         {
-            //BitmapImage image = new BitmapImage();
-            //image.BeginInit();
-            //image.UriSource = new Uri(@"/Resources/Grisha/");
-            //image.EndInit();
-            //img_Player.Source = image; 
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.UriSource = new Uri("C:/Users/Student/Desktop/Рябов/Proectograd_IT_2022/AIS_Games/AIS_Games/Resources/Grisha/chainsaw.jpg");
+            image.EndInit();
+            img_Player.Source = image;
+            EnemyTurn();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -65,7 +75,16 @@ namespace AIS_Games.Windows
             Close();
         }
 
-
+        private void EnemyTurn()
+        {
+            Random random = new Random();
+            string a = list[new Random().Next(list.Count)];
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.UriSource = new Uri("C:/Users/Student/Desktop/Рябов/Proectograd_IT_2022/AIS_Games/AIS_Games/Resources/Grisha/" + a + ".jpg");
+            image.EndInit();
+            img_PC.Source = image;
+        }
 
 
     }    
