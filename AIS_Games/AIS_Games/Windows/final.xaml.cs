@@ -25,5 +25,9 @@ namespace AIS_Games.Windows
 
         }
 
+        public void zanovo()
+        {
+            Close();
+        }
     }
 }
