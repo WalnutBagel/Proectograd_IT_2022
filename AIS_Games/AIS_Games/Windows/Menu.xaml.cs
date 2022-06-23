@@ -20,6 +20,5 @@ namespace AIS_Games.Windows
 
             difficult.ShowViewModel();
         }
-
     }
 }

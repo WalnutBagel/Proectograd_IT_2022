@@ -139,5 +139,10 @@
   <ItemGroup>
     <Resource Include="Resources\Sus.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RickRoll.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

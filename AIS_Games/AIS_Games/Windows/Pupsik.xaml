@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:AIS_Games.Windows"
         mc:Ignorable="d"
         Title="Pupsik" Height="450" Width="800">
-    <Grid Background="Transparent" MouseDown="Grid_MouseDown_Translate">
+    <Grid MouseDown="Grid_MouseDown_Translate">
+        <Grid.Background>
+            <VisualBrush>
+                <VisualBrush.Visual>
+                    <StackPanel Background="White">
+                        <MediaElement Source="/Resources/RickRoll.mp4" LoadedBehavior="Play">
+                            
+                        </MediaElement>
+                    </StackPanel>
+                                
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </Grid.Background>
         <Border x:Name="border1" HorizontalAlignment="Left" VerticalAlignment="Top"
              Width="80" Height="80" Background="Red" Margin="10,10,0,0" CornerRadius="10" 
              BorderBrush="#FFB9B8B8" BorderThickness="3"/>
@@ -22,5 +34,6 @@
         <Border x:Name="border4" HorizontalAlignment="Left" VerticalAlignment="Top" 
     Width="80" Height="80" Background="Blue" Margin="710,10,0,0" CornerRadius="10" 
     BorderBrush="#FFB9B8B8" BorderThickness="3" />
+        
     </Grid>
 </Window>
