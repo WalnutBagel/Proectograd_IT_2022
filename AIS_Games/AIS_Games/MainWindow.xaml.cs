@@ -41,9 +41,9 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/TestGame.jpg",
-                GameText = "Игра про захват Татарстаном всея мира",
-                GameCreators = "Сделали Ваня и Леша))))"
+                GameImage = "Resources/IconFlappy.png",
+                GameText = "Flappy Bird",
+                GameCreators = "Maria Konstantinova"
             });
             games_info.Add(new Game
             {
@@ -59,9 +59,9 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/TestGame.jpg",
-                GameText = "Игра про захват Татарстаном всея мира",
-                GameCreators = "Сделали Ваня и Леша))))"
+                GameImage = "Resources/images.jpg",
+                GameText = "Камень,ножницы,бумага",
+                GameCreators = "Сделал Григорий Рябов"
             });
             GamesLV.ItemsSource = games_info;
 

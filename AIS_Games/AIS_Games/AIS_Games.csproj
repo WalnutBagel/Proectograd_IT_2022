@@ -125,16 +125,11 @@
     <Resource Include="Resources\TestGame.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\UPLAPPY\nolik.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\UPLAPPY\крестик.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\UPLAPPY\пусто.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\UPLAPPY\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\IconFlappy.PNG" />
+    <Resource Include="Resources\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
