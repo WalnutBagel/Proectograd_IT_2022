@@ -61,7 +61,7 @@ namespace AIS_Games
             {
                 GameImage = "Resources/Grisha/images.jpg",
                 GameText = "Камень,ножницы,бумага",
-                GameCreators = "Сделал Гриша"
+                GameCreators = "Сделал Григорий Рябов"
             });
             GamesLV.ItemsSource = games_info;
 

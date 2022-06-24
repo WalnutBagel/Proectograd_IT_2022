@@ -20,9 +20,6 @@ namespace AIS_Games.Windows
         string Player = "";
         string compucter = "";
         string modeGame = "show";
-        int scoreWin;
-        int scoreLose;
-        int scoreDraw;
         List<string> list = (new string[] { "TheRock", "Paper", "chainsaw" }).ToList(); //список
 
 
@@ -34,7 +31,7 @@ namespace AIS_Games.Windows
 
         }
 
-        private void Rock_Click(object sender, RoutedEventArgs e)
+        private void Rock_Click(object sender, RoutedEventArgs e)   //кнопка отвечающая за камень
         {
             BitmapImage image = new BitmapImage();
             image.BeginInit();
@@ -44,7 +41,7 @@ namespace AIS_Games.Windows
             EnemyTurn();
         }
 
-        private void Paper_Click(object sender, RoutedEventArgs e)
+        private void Paper_Click(object sender, RoutedEventArgs e)   //кнопка отвечающая за бумагу
         {
            
             BitmapImage image = new BitmapImage();
@@ -54,8 +51,7 @@ namespace AIS_Games.Windows
             img_Player.Source = image;
             EnemyTurn();
         }
-
-        private void Scissors_Click(object sender, RoutedEventArgs e)
+        private void Scissors_Click(object sender, RoutedEventArgs e)  //кнопка отвечающая за ножницы
         {
             BitmapImage image = new BitmapImage();
             image.BeginInit();
@@ -64,13 +60,12 @@ namespace AIS_Games.Windows
             img_Player.Source = image;
             EnemyTurn();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)   //кнопка закрывающая приложение
         {
             Close();
         }
 
-        private void EnemyTurn()
+        private void EnemyTurn()  //код отвечающий за действие противника
         {
             Random random = new Random();
             string a = list[new Random().Next(list.Count)];

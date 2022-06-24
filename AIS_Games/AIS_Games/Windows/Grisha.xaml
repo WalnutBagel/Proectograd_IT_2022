@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:AIS_Games.Windows"
         mc:Ignorable="d"
         Title="Grisha" Height="750" Width="1100" WindowStartupLocation="CenterScreen">
-    <Grid Background="Black">
-        <Grid.RowDefinitions>
+    <Grid Background="Black">    
+        <Grid.RowDefinitions>   <!--разделяет окно на несколько частей-->
             <RowDefinition Height="1*"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="2*"/>
@@ -22,15 +22,16 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" x:Name="img_Player"/>
-            <Image Grid.Column="1" x:Name="img_VS" Source="/Resources/Grisha/VS.jpg" Margin="50"/>
-            <Image Grid.Column="2" x:Name="img_PC"/>
+            <Image Grid.Column="0" x:Name="img_Player"/>    <!--выделяет поле игрока-->
+            <Image Grid.Column="1" x:Name="img_VS" Source="/Resources/Grisha/VS.jpg" Margin="50"/>  <!--выделяет поле vs-->
+            <Image Grid.Column="2" x:Name="img_PC"/>    <!--выделяет поле противника-->
         </Grid>
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button x:Name="Rock" Content="Rock" Click="Rock_Click" Width="150" Height="50" FontSize="30" Margin="50 0"/>
-            <Button x:Name="Paper" Content="Paper" Click="Paper_Click" Width="150" Height="50" FontSize="30"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">   
+            <Button x:Name="Rock" Content="Rock" Click="Rock_Click" Width="150" Height="50" FontSize="30" Margin="50 0"/>   <!--определяет кнопку камня-->
+            <Button x:Name="Paper" Content="Paper" Click="Paper_Click" Width="150" Height="50" FontSize="30"/> <!--определяет кнопку бумаги-->
             <Button x:Name="Scissors" Content="Scissors" Click="Scissors_Click" Width="150" Height="50" FontSize="30" Margin="50 0"/>
-            
+            <!--определяет кнопку ножниц-->
+           
         </StackPanel>
                     
     </Grid>
