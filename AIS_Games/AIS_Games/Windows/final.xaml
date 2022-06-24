@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="final" Height="450" Width="800">
     <Grid>
-        <Button Height="200" x:Name="Заново" Content="Закрыть" Click ="zakrit" Margin="0,234,0,0">
+        <Button Height="200" x:Name="Заново" Content="Закрыть" Click ="zakrit" Margin="0,234,0,0" Background="red">
 
         </Button>
-        <Button Height="200" Margin="0,0,0,234" Content="Заново" Click="zanovo">
+        <Button Height="200" Margin="0,0,0,234" Content="Заново" Click="zanovo" Background="green">
 
         </Button>
     </Grid>
