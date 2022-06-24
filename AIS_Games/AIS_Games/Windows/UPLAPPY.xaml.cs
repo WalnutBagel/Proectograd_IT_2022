@@ -153,6 +153,12 @@ namespace AIS_Games.Windows
                 Close();
                 win_n.ShowDialog();
             }
+            else if (bt1 != "p" && bt2 != "p" && bt3 != "p" && bt4 != "p" && bt5 != "p" && bt6 != "p" && bt7 != "p" && bt8 != "p" && bt9 != "p")
+            {
+                Windows.final win = new Windows.final();
+                Close();
+                win.ShowDialog();
+            }
         }
 
         public void b1click(object sender, RoutedEventArgs e)
