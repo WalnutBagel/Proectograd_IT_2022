@@ -1,0 +1,58 @@
+﻿<Window x:Class="AIS_Games.Windows.Flappybird"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AIS_Games.Windows"
+        mc:Ignorable="d"
+        Title="Flappybird" Height="600" Width="1000" MaxHeight="600" MaxWidth="1000">
+    <Canvas Name="MyCanvas" Focusable="True" KeyDown="KeyIsDown" KeyUp="KeyIsUp" Background="#FFB9C1F0">
+        <Image Height="195" Width="276" Source="/Resources/clouds.png" Canvas.Left="164" Canvas.Top="137" Tag="clouds"/>
+        <Image Height="207" Width="210" Source="/Resources/clouds2.png" Canvas.Left="587" Canvas.Top="220" Tag="clouds" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="a" Tag="obs1" Canvas.Left="76" Canvas.Top="270" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs1" Canvas.Left="76" Canvas.Top="-236" />
+
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="b" Tag="obs2" Canvas.Left="228" Canvas.Top="416" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs2" Canvas.Left="228" Canvas.Top="-90" />
+
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="c" Tag="obs3" Canvas.Left="426" Canvas.Top="292" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs3" Canvas.Left="426" Canvas.Top="-214" />
+
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="d" Tag="obs4" Canvas.Left="607" Canvas.Top="489" HorizontalAlignment="Center" VerticalAlignment="Top" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs4" Canvas.Left="607" Canvas.Top="-17" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Image Height="390" Width="66" Source="/Resources/pipeBottom.png" Name="e" Tag="obs5" Canvas.Left="805" Canvas.Top="195" />
+        <Image Height="390" Width="66" Source="/Resources/pipeTop.png" Tag="obs5" Canvas.Left="805" Canvas.Top="-311"/>
+
+        <Image Source="/Resources/score.png" Height="41" Width="128" Canvas.Left="-13" Canvas.Top="2"></Image>
+        <Label Name="txtScore" FontSize="30" FontWeight="ExtraBold" FontFamily="OCR A Extended" Content="0" RenderTransformOrigin="1.024,0.806" HorizontalAlignment="Left" Canvas.Left="101" VerticalAlignment="Top" Foreground="#FF080000" Width="27" Height="43" Canvas.Top="1" />
+
+        <Image x:Name="Skin" Source="/Resources/skinchb.png" Height="57" Width="183" MouseDown="Skin_MouseDown"  Canvas.Left="859" Canvas.Top="11"></Image>
+
+        <Image x:Name="Startp" Source="/Resources/startb.png" Height="200" Width="300" MouseDown="Startp_MouseDown" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="350" Canvas.Top="180"/>
+        <Image x:Name="Exitp" Source="/Resources/exitb.png" Height="75" Width="170" MouseDown="Exitp_MouseDown" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="415" Canvas.Top="340"/>
+        <Image x:Name="Title" Source="/Resources/Flappybirdtt.png" Height="262" Width="510" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="245" Canvas.Top="55"/>
+
+
+        <TextBlock Name="EendScore" FontSize="90" TextWrapping="Wrap" FontFamily="OCR A Extended" HorizontalAlignment="Left" VerticalAlignment="Center" Width="650" Canvas.Left="175" Canvas.Top="35" Height="174" Background="Transparent" TextAlignment="Center" Visibility="Hidden">
+            Your score: 
+            17
+        </TextBlock>
+        <Image Name="flappyBird" Height="36" Width="50" Source="/Resources/bbird.png" Stretch="Fill" Canvas.Top="190" Canvas.Left="10" />
+
+    </Canvas>
+    <!--<Grid Margin="40" Background="Aqua">
+        
+    </Grid>-->
+</Window>

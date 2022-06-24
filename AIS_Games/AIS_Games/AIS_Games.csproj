@@ -35,9 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DocumentFormat.OpenXml, Version=2.16.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
-      <HintPath>..\packages\DocumentFormat.OpenXml.2.16.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -58,15 +55,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Classes\Class1.cs" />
-    <Compile Include="Grisha\xaml.cs" />
-    <Compile Include="Windows\Grisha.xaml.cs">
-      <DependentUpon>Grisha.xaml</DependentUpon>
+    <Compile Include="Windows\Flappybird.xaml.cs">
+      <DependentUpon>Flappybird.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\LeshaVania.xaml.cs">
       <DependentUpon>LeshaVania.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Player.cs" />
+    <Compile Include="Windows\SkinChange.xaml.cs">
+      <DependentUpon>SkinChange.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -79,11 +76,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\Grisha.xaml">
+    <Page Include="Windows\Flappybird.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\LeshaVania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\SkinChange.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -106,10 +107,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="..\.editorconfig">
-      <Link>.editorconfig</Link>
-    </None>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,22 +125,39 @@
     <Resource Include="Resources\TestGame.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Grisha\Salavat.png" />
+    <Resource Include="Resources\pipeBottom.png" />
+    <Resource Include="Resources\pipeTop.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Grisha\VS.jpg" />
+    <Resource Include="Resources\clouds.png" />
+    <Resource Include="Resources\clouds2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Grisha\images.jpg" />
+    <Resource Include="Resources\bbird.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Grisha\chainsaw.jpg" />
+    <Resource Include="Resources\startb.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Grisha\TheRock.jpg" />
+    <Resource Include="Resources\exitb.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Grisha\Paper.jpg" />
+    <Resource Include="Resources\score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Flappybirdtt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\IconFlappy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\skinchb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FlappyBird2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\tick.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
