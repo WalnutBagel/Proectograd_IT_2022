@@ -27,6 +27,13 @@ namespace AIS_Games.Windows
 
         public void zanovo(object sender, RoutedEventArgs e)
         {
+            Windows.UPLAPPY zan = new Windows.UPLAPPY();
+            Close();
+            zan.ShowDialog();
+        }
+
+        public void zakrit(object sender, RoutedEventArgs e)
+        {
             Close();
         }
     }

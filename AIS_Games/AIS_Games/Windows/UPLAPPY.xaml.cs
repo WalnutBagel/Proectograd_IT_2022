@@ -164,12 +164,14 @@ namespace AIS_Games.Windows
                     bt1 = "k";
                     hod = "nolik";
                     //but1.ImageSource = new BitmapImage(new Uri("/Resources/UPLAPPY/крестик.png", UriKind.RelativeOrAbsolute));
+                    b1.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt1 = "n";
                     hod = "krestik";
+                    b1.Background = Brushes.Green;
                     proverka();
                 }
             }
@@ -182,13 +184,14 @@ namespace AIS_Games.Windows
                 {
                     bt2 = "k";
                     hod = "nolik";
-
+                    b2.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt2 = "n";
                     hod = "krestik";
+                    b2.Background = Brushes.Green;
                     proverka();
                 }
             }
@@ -202,12 +205,14 @@ namespace AIS_Games.Windows
                 {
                     bt3 = "k";
                     hod = "nolik";
+                    b3.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt3 = "n";
                     hod = "krestik";
+                    b3.Background = Brushes.Green;
                     proverka();
                 }
             }
@@ -220,12 +225,14 @@ namespace AIS_Games.Windows
                 {
                     bt4 = "k";
                     hod = "nolik";
+                    b4.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt4 = "n";
                     hod = "krestik";
+                    b4.Background = Brushes.Green;
                     proverka();
                 }
             }
@@ -238,12 +245,14 @@ namespace AIS_Games.Windows
                 {
                     bt5 = "k";
                     hod = "nolik";
+                    b5.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt5 = "n";
                     hod = "krestik";
+                    b5.Background = Brushes.Green;
                     proverka();
                 }
             }
@@ -256,12 +265,14 @@ namespace AIS_Games.Windows
                 {
                     bt6 = "k";
                     hod = "nolik";
+                    b6.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt6 = "n";
                     hod = "krestik";
+                    b6.Background = Brushes.Green;
                     proverka();
                 }
             }
@@ -274,12 +285,14 @@ namespace AIS_Games.Windows
                 {
                     bt7 = "k";
                     hod = "nolik";
+                    b7.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt7 = "n";
                     hod = "krestik";
+                    b7.Background = Brushes.Green;
                     proverka();
                 }
             }
@@ -292,12 +305,14 @@ namespace AIS_Games.Windows
                 {
                     bt8 = "k";
                     hod = "nolik";
+                    b8.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt8 = "n";
                     hod = "krestik";
+                    b8.Background = Brushes.Green;
                     proverka();
                 }
             }
@@ -310,12 +325,14 @@ namespace AIS_Games.Windows
                 {
                     bt9 = "k";
                     hod = "nolik";
+                    b9.Background = Brushes.Red;
                     proverka();
                 }
                 else if (hod == "nolik")
                 {
                     bt9 = "n";
                     hod = "krestik";
+                    b9.Background = Brushes.Green;
                     proverka();
                 }
             }
