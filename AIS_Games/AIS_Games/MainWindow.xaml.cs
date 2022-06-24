@@ -35,8 +35,8 @@ namespace AIS_Games
             InitializeComponent();
             games_info.Add(new Game
             {
-                GameImage = "Resources/TestGame.jpg",
-                GameText = "Игра про захват Татарстаном всея мира",
+                GameImage = "Resources/TEST.jpg",
+                GameText = "Тестовое окно для игры))))",
                 GameCreators = "Сделали Ваня и Леша))))"
             });
             games_info.Add(new Game
@@ -47,14 +47,14 @@ namespace AIS_Games
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/UPLAPPY/icon.png",
+                GameImage = "Resources/icon.png",
                 GameText = "nOLIK-kRESTIK",
-                GameCreators = "Пытался сделать Андрюша))))"
+                GameCreators = "Сделал Андрей Мельников"
             });
             games_info.Add(new Game
             {
-                GameImage = "Resources/TestGame.jpg",
-                GameText = "Игра про захват Татарстаном всея мира",
+                GameImage = "Resources/TEST.jpg",
+                GameText = "Тестовое окно для игры))))",
                 GameCreators = "Сделали Ваня и Леша))))"
             });
             games_info.Add(new Game

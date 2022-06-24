@@ -131,5 +131,9 @@
     <Resource Include="Resources\IconFlappy.PNG" />
     <Resource Include="Resources\images.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\icon.png" />
+    <Resource Include="Resources\TEST.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
